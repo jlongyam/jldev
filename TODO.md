@@ -1,8 +1,8 @@
 # Todo
 
-### Prepare Icons :
+## Icons
 
-Type: **png** and **ico**, width x height
+### png
 
 | Size      | Type      | Implementation        | Done |
 |-----------|-----------|-----------------------|------|
@@ -36,11 +36,9 @@ Type: **png** and **ico**, width x height
 | 1024      | store     | ios                   | OK	  |
 | 2732      | splash    | ios                   | NO	  |
 
-Type **ico**
+### ico
 
-- classic : 16,24,32,48,64 | winXp | NO
-- modern  : 16,32,48,256   | win7+ | NO
-
-### Tools
-
-- https://icofx.ro
+| Type		| Size						| Done	|
+|---------|-----------------|-------|
+| classic | 16,24,32,48,64	| NO 		|
+| modern  | 16,32,48,256		| NO 		|
