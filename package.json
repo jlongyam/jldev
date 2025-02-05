@@ -1,24 +1,34 @@
 {
-  "name": "monaca-template-minimum",
+  "name": "jldev",
   "version": "4.1.3",
-  "displayName": "Monaca Template Minimum",
+  "displayName": "cross dev lib",
+  "main": "www/index.html",
   "engines": {
     "node": ">=18.16"
+  },
+  "type": "module",
+  "scripts": {
+    "monaca:preview": "npm run dev",
+    "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081",
+    "build": "rollup -c",
+    "test": "php -S localhost:9696 -t ./www/source ./cli/php/server/start.php",
+    "server": "php -S localhost:6969 -t ./www ./cli/php/server/start.php",
+    "app": "nw ."
   },
   "dependencies": {
     "monaca-plugin-monaca-core": "3.3.1"
   },
-  "scripts": {
-    "monaca:preview": "npm run dev",
-    "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/wasm-node": "^4.34.3",
+    "browser-sync": "^3.0.3",
+    "cordova": "^12.0.0",
+    "rollup": "^4.34.3"
   },
   "cordova": {
     "plugins": {
       "monaca-plugin-monaca-core": {}
     }
-  },
-  "devDependencies": {
-    "browser-sync": "~2.27.7",
-    "cordova": "^12.0.0"
   }
 }
