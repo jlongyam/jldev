@@ -1,7 +1,3 @@
 # jldev
 
-dev cross lib
-
-## JS
-
-- polyfill
+dev tester cross lib
