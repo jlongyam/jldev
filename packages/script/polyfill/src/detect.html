@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>polyfill.detect</title>
+</head>
+<body>
+  <pre id="pre"></pre>
+  <script src="polyfill.detect.js"></script>
+  <script>
+    var pre = document.getElementById('pre')
+    pre.textContent = JSON.stringify(polyfill,0,2);
+  </script>
+</body>
+</html>

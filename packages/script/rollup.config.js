@@ -5,11 +5,11 @@ import buble from '@rollup/plugin-buble';
 export default [
   {
     input: [
-      'www/source/js/script.js'
+      'src/script.js'
     ],
     output: [
       {
-        dir: 'www/js',
+        dir: 'out',
         format: 'system'
       }
     ],

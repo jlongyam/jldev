@@ -1,4 +1,4 @@
-System.register([], (function () {
+System.register([], (function (exports) {
   'use strict';
   return {
     execute: (function () {
@@ -58,19 +58,24 @@ System.register([], (function () {
         return result
       }
 
-      var result = [
-        env,
-        type(false),
-        test({
-          name: 'should 0',
-          call: function() {
-            return 0
-          },
-          should: 0
-        })
-      ];
+      // const result = [
+      //   env,
+      //   type(false),
+      //   test({
+      //     name: 'should 0',
+      //     call: function() {
+      //       return 0
+      //     },
+      //     should: 0
+      //   })
+      // ]
 
-      console.table(result);
+      // console.table(result)
+      var script = exports("default", {
+        env: env,
+        type: type,
+        test: test
+      });
 
     })
   };

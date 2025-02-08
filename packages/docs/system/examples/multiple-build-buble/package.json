@@ -1,0 +1,14 @@
+{
+  "name": "multiple-build",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-buble": "^1.0.3",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/wasm-node": "^4.34.3",
+    "rollup": "^4.34.3"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>polyfill scan</title>
+  <script src="lib/console.js"></script>
+  <script src="lib/es5.js"></script>
+  <script src="lib/es6.js"></script>
+  <script src="lib/fetch.min.js"></script>
+  <script src="lib/_Promise.min.js"></script>
+  <script src="lib/system.js"></script>
+</head>
+<body>
+  <pre id="pre"></pre>
+  <script>
+    System.import('./out/script.js').then(function(script) {
+      var js = script.default;
+      var arr_key = [];
+      var arr_val = [];
+      for(key in js.env) {
+        arr_key.push(key);
+        arr_val.push(js.env[key]);
+      }
+      report.table([arr_key,arr_val])
+    })
+  </script>
+</body>
+</html>
