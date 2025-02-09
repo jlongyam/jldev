@@ -1,9 +1,4 @@
-<img width="75px" height="75px" align="right" alt="Inquirer Logo" src="https://raw.githubusercontent.com/SBoudrias/Inquirer.js/main/assets/inquirer_readme.svg?sanitize=true" title="Inquirer.js"/>
-
 # Inquirer.js
-
-[![npm](https://badge.fury.io/js/inquirer.svg)](https://www.npmjs.com/package/inquirer)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSBoudrias%2FInquirer.js.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSBoudrias%2FInquirer.js?ref=badge_shield)
 
 A collection of common interactive command line user interfaces.
 

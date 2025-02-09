@@ -4,9 +4,11 @@
   <title>polyfill scan</title>
   <script src="lib/console.js"></script>
   <script src="lib/es5.js"></script>
-  <script src="lib/es6.js"></script>
+  <!-- <script src="lib/es6.js"></script> -->
   <script src="lib/fetch.min.js"></script>
-  <script src="lib/_Promise.min.js"></script>
+  <!-- <script src="lib/_Promise.min.js"></script> -->
+  <script src="lib/includes.js"></script>
+  <script src="lib/Promise.min.js"></script>
   <script src="lib/system.js"></script>
 </head>
 <body>
@@ -20,7 +22,7 @@
         arr_key.push(key);
         arr_val.push(js.env[key]);
       }
-      report.table([arr_key,arr_val])
+      console.log([arr_key,arr_val])
     })
   </script>
 </body>

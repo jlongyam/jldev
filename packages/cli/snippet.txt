@@ -1,3 +1,0 @@
-npx cordova create packages/web io.github.jlongyam.jldev jldev
-npx cordova platform add browser
-    

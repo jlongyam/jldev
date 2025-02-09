@@ -2,21 +2,21 @@
   "name": "jldev",
   "version": "1.0.0",
   "displayName": "cross dev lib",
-  "main": "www/index.html",
+  "main": "app/index.html",
   "engines": {
     "node": ">=18.16"
   },
   "type": "module",
   "workspaces": [
+    "./packages/script",
     "./packages/docs/system/examples/*"
   ],
   "scripts": {
     "monaca:preview": "npm run dev",
     "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081",
     "build": "rollup -c",
-    "test": "php -S localhost:9696 -t ./www/source ./cli/php/server/start.php",
-    "server": "php -S localhost:6969 -t ./www ./cli/php/server/start.php",
-    "app": "nw ."
+    "server": "php -S localhost:6969 -t ./app ./cli/php/server/start.php",
+    "app": "nw app"
   },
   "dependencies": {
     "monaca-plugin-monaca-core": "3.3.1",
