@@ -1,4 +1,5 @@
 export default class FS_Android {
+// class FS_Android {
     constructor(byteSize = 1024) {
         this.byteSize = byteSize
     }

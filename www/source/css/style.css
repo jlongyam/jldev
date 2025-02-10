@@ -1,2 +1,16 @@
-
-
+[id="select_path"] {
+    width: 100%;
+    font-size: 1em;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+[id="input_path"] {
+    width: 96.8%;
+    font-size: 1em;
+    padding: 4px;
+}
+[id="pre_log"] {
+    border: 1px solid silver;
+    overflow: auto;
+    padding: 8px;
+}
