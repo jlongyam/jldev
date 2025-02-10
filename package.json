@@ -16,7 +16,9 @@
     "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081",
     "build": "rollup -c",
     "server": "php -S localhost:6969 -t ./app ./cli/php/server/start.php",
-    "app": "nw app"
+    "app": "nw app",
+    "buble": "buble www/source/core/polyfill/src/fetch.es.js > www/source/core/polyfill/src/fetch.js",
+    "terser": "terser -o www/source/core/polyfill/dist/console.min.js www/source/core/polyfill/src/console.js"
   },
   "dependencies": {
     "monaca-plugin-monaca-core": "3.3.1",

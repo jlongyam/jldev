@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>defineProperty</title>
+</head>
+<body>
+  <script>
+    Object.defineProperty = function(o, name, prop) {
+      o[name] = prop.get();
+    }
+  </script>
+  <pre id="pre"></pre>
+  <script>
+    var a = {};
+    Object.defineProperty(a, 'color', {
+      get: function() {
+        return 'red'
+      },
+      set: function(other) {
+        a.color = other
+      }
+    });
+    pre.innerHTML = a.color;
+    a.color = 'blue';
+    pre.innerHTML += '<br>' + a.color;
+  </script>
+  <script src="../document/currentScript.js"></script>
+  <script>
+    pre.innerHTML += '<br>' + document.currentScript.tagName;
+  </script>
+</body>
+</html>
